@@ -1,0 +1,20 @@
+---
+- src: https://github.com/crgwilson/ansible-role-openssh
+  version: master
+  name: openssh
+
+- src: https://github.com/crgwilson/ansible-role-users-and-groups
+  version: master
+  name: users_and_groups
+
+- src: https://github.com/crgwilson/ansible-role-fish
+  version: master
+  name: fish
+
+- src: https://github.com/crgwilson/ansible-role-packer
+  version: master
+  name: packer
+
+- src: https://github.com/crgwilson/ansible-role-libvirt-host
+  version: master
+  name: libvirt_host

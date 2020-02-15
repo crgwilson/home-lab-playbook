@@ -1,0 +1,7 @@
+---
+- hosts: kvm_hypervisor
+  roles:
+    - role: libvirt_host
+      tags: libvirt
+    - role: packer
+      tags: packer

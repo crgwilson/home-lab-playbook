@@ -1,0 +1,14 @@
+---
+- hosts: all
+  roles:
+    - role: users_and_groups
+      tags:
+        - users
+        - groups
+        - users_and_groups
+    - role: openssh
+      tags:
+        - ssh
+        - openssh
+    - role: fish
+      tags: fish

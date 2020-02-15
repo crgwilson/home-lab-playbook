@@ -1,0 +1,2 @@
+[kvm_hypervisor]
+lab-local ansible_host=10.0.0.200

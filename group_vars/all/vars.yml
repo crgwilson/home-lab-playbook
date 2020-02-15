@@ -1,0 +1,21 @@
+---
+ansible_port: 9876
+
+users_and_groups_groups:
+  ssh_admins:
+    state: present
+
+users_and_groups_users:
+  cwilson:
+    shell: /usr/bin/fish
+    groups:
+      - ssh_admins
+      - sudo
+
+# SSH stuff
+openssh_port: "{{ ansible_port }}"
+openssh_password_authentication: false
+openssh_allow_agent_forwarding: true
+openssh_allow_tcp_forwarding: true
+openssh_allow_groups:
+  - ssh_admins
