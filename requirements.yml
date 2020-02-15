@@ -18,3 +18,7 @@
 - src: https://github.com/crgwilson/ansible-role-libvirt-host
   version: master
   name: libvirt_host
+
+- src: https://github.com/crgwilson/ansible-role-debian-backports-repo
+  version: master
+  name: debian_backports_repo

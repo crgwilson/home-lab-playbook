@@ -5,3 +5,9 @@
       tags: libvirt
     - role: packer
       tags: packer
+    - role: debian_backports_repo
+      tags:
+        - debian
+        - backports
+        - apt
+        - debian_backports_repo
