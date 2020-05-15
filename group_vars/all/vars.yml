@@ -1,21 +1,48 @@
 ---
-ansible_port: 9876
+hostname_fqdn: "{{ inventory_hostname }}"
 
 users_and_groups_groups:
   ssh_admins:
     state: present
 
 users_and_groups_users:
+  root:
+    shell: /bin/bash
+    password: "{{ root_password }}"
   cwilson:
     shell: /usr/bin/fish
+    password: "{{ cwilson_password }}"
     groups:
       - ssh_admins
-      - sudo
+      - "{{ sudo_group }}"
+    authorized_key: cwilson_authorized_key.pub
+
+sudo_users:
+  - name: root
+    hosts: ALL
+    runas: ALL:ALL
+    commands:
+      - ALL
+  - name: cwilson
+    hosts: ALL
+    runas: ALL:ALL
+    nopasswd: true
+    commands:
+      - ALL
+
+sudo_groups:
+  - name: "{{ sudo_group }}"
+    hosts: ALL
+    runas: ALL:ALL
+    commands:
+      - ALL
 
 # SSH stuff
-openssh_port: "{{ ansible_port }}"
+openssh_port: 9876
 openssh_password_authentication: false
 openssh_allow_agent_forwarding: true
 openssh_allow_tcp_forwarding: true
 openssh_allow_groups:
   - ssh_admins
+
+ansible_port: "{{ openssh_port }}"

@@ -1,6 +1,9 @@
 ---
 - hosts: all
   roles:
+    - role: hostname
+      tags:
+        - hostname
     - role: fish
       tags:
         - fish
@@ -9,6 +12,13 @@
         - users
         - groups
         - users_and_groups
+    - role: sudo
+      tags:
+        - sudo
+    - role: qemu-guest-agent
+      when: ('virtual' in group_names)
+      tags:
+        - qemu-guest-agent
     - role: openssh
       tags:
         - ssh

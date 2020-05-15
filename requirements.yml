@@ -22,3 +22,19 @@
 - src: https://github.com/crgwilson/ansible-role-debian-backports-repo
   version: master
   name: debian_backports_repo
+
+- src: https://github.com/crgwilson/ansible-role-sudo
+  version: master
+  name: sudo
+
+- src: https://github.com/crgwilson/ansible-role-hostname
+  version: master
+  name: hostname
+
+- src: https://github.com/crgwilson/ansible-role-qemu-guest-agent
+  version: master
+  name: qemu-guest-agent
+
+- src: https://github.com/crgwilson/ansible-role-rsyslog
+  version: master
+  name: rsyslog

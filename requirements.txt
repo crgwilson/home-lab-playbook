@@ -6,3 +6,4 @@ molecule
 docker-py
 flake8
 yamllint
+passlib
