@@ -38,3 +38,7 @@
 - src: https://github.com/crgwilson/ansible-role-rsyslog
   version: master
   name: rsyslog
+
+- src: https://github.com/crgwilson/ansible-role-iptables
+  version: master
+  name: iptables
