@@ -12,6 +12,7 @@ users_and_groups_users:
   cwilson:
     shell: /usr/bin/fish
     password: "{{ cwilson_password }}"
+    comment: Craig Wilson
     groups:
       - ssh_admins
       - "{{ sudo_group }}"
