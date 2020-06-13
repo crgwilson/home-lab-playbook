@@ -42,3 +42,7 @@
 - src: https://github.com/crgwilson/ansible-role-iptables
   version: master
   name: iptables
+
+- src: https://github.com/crgwilson/ansible-role-docker-ce
+  version: master
+  name: docker-ce
