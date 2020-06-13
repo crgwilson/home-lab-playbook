@@ -23,6 +23,10 @@
   version: master
   name: debian_backports_repo
 
+- src: https://github.com/crgwilson/ansible-role-epel
+  version: master
+  name: epel
+
 - src: https://github.com/crgwilson/ansible-role-sudo
   version: master
   name: sudo
