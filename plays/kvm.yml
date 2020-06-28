@@ -1,11 +1,11 @@
 ---
 - hosts: kvm_hypervisor
   roles:
-    - role: libvirt_host
+    - role: crgwilson.libvirt_host
       tags: libvirt
-    - role: packer
+    - role: crgwilson.packer
       tags: packer
-    - role: debian_backports_repo
+    - role: crgwilson.debian_backports_repo
       tags:
         - debian
         - backports

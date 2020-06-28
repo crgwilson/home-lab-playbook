@@ -1,25 +1,26 @@
 ---
 - hosts: all
   roles:
-    - role: hostname
+    - role: crgwilson.hostname
       tags:
         - hostname
-    - role: fish
+    - role: crgwilson.fish
       tags:
         - fish
-    - role: users_and_groups
+    - role: crgwilson.users_and_groups
       tags:
         - users
         - groups
         - users_and_groups
-    - role: sudo
+    - role: crgwilson.sudo
       tags:
         - sudo
-    - role: qemu-guest-agent
+    - role: crgwilson.qemu-guest-agent
       when: ('virtual' in group_names)
       tags:
         - qemu-guest-agent
-    - role: openssh
+    - role: crgwilson.openssh
       tags:
         - ssh
         - openssh
+    - role: crgwilson.docker-ce

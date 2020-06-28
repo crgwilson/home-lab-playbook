@@ -1,52 +1,52 @@
 ---
 - src: https://github.com/crgwilson/ansible-role-openssh
   version: master
-  name: openssh
+  name: crgwilson.openssh
 
 - src: https://github.com/crgwilson/ansible-role-users-and-groups
   version: master
-  name: users_and_groups
+  name: crgwilson.users_and_groups
 
 - src: https://github.com/crgwilson/ansible-role-fish
   version: master
-  name: fish
+  name: crgwilson.fish
 
 - src: https://github.com/crgwilson/ansible-role-packer
   version: master
-  name: packer
+  name: crgwilson.packer
 
 - src: https://github.com/crgwilson/ansible-role-libvirt-host
   version: master
-  name: libvirt_host
+  name: crgwilson.libvirt_host
 
 - src: https://github.com/crgwilson/ansible-role-debian-backports-repo
   version: master
-  name: debian_backports_repo
+  name: crgwilson.debian_backports_repo
 
 - src: https://github.com/crgwilson/ansible-role-epel
   version: master
-  name: epel
+  name: crgwilson.epel
 
 - src: https://github.com/crgwilson/ansible-role-sudo
   version: master
-  name: sudo
+  name: crgwilson.sudo
 
 - src: https://github.com/crgwilson/ansible-role-hostname
   version: master
-  name: hostname
+  name: crgwilson.hostname
 
 - src: https://github.com/crgwilson/ansible-role-qemu-guest-agent
   version: master
-  name: qemu-guest-agent
+  name: crgwilson.qemu-guest-agent
 
 - src: https://github.com/crgwilson/ansible-role-rsyslog
   version: master
-  name: rsyslog
+  name: crgwilson.rsyslog
 
 - src: https://github.com/crgwilson/ansible-role-iptables
   version: master
-  name: iptables
+  name: crgwilson.iptables
 
 - src: https://github.com/crgwilson/ansible-role-docker-ce
   version: master
-  name: docker-ce
+  name: crgwilson.docker-ce
