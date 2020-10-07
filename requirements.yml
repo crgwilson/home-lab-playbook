@@ -47,6 +47,26 @@
   version: master
   name: crgwilson.iptables
 
+- src: https://github.com/crgwilson/ansible-role-gnupg
+  version: master
+  name: crgwilson.gnupg
+
+- src: https://github.com/crgwilson/ansible-role-apt
+  version: master
+  name: crgwilson.apt
+
 - src: https://github.com/crgwilson/ansible-role-docker-ce
   version: master
   name: crgwilson.docker-ce
+
+- src: https://github.com/crgwilson/ansible-role-freeipa-client
+  version: master
+  name: crgwilson.freeipa-client
+
+- src: https://github.com/crgwilson/ansible-role-git
+  version: master
+  name: crgwilson.git
+
+- src: https://github.com/crgwilson/ansible-role-yocto
+  version: master
+  name: crgwilson.yocto

@@ -1,4 +1,6 @@
 ---
+ansible_port: "{{ openssh_port }}"
+
 hostname_fqdn: "{{ inventory_hostname }}"
 
 users_and_groups_groups:
@@ -46,4 +48,10 @@ openssh_allow_tcp_forwarding: true
 openssh_allow_groups:
   - ssh_admins
 
-ansible_port: "{{ openssh_port }}"
+yocto_user: cwilson
+yocto_root_directory: /home/cwilson/firmware
+yocto_layers:
+  - openembedded-core
+  - meta-openembedded
+  - meta-virtualization
+  - meta-raspberrypi

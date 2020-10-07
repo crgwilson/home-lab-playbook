@@ -11,3 +11,4 @@
         - backports
         - apt
         - debian_backports_repo
+    - role: crgwilson.yocto
