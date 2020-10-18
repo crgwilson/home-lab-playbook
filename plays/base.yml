@@ -24,3 +24,6 @@
         - ssh
         - openssh
     - role: crgwilson.docker-ce
+      when: install_docker is defined
+      tags:
+        - docker

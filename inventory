@@ -1,31 +1,20 @@
 [all]
-10.0.0.148
+lab-local ansible_host=10.0.0.200
+nfs-1.lab.garbage-day.dev ansible_host=10.0.0.66
+node-1.lab.garbage-day.dev ansible_host=10.0.0.52 install_docker=True
+node-2.lab.garbage-day.dev ansible_host=10.0.0.97 install_docker=True
 
 [all:children]
 physical
 virtual
-Debian
-CentOS
 
 [physical:children]
 kvm_hypervisor
 
+[virtual]
+nfs-1.lab.garbage-day.dev
+node-1.lab.garbage-day.dev
+node-2.lab.garbage-day.dev
+
 [kvm_hypervisor]
-lab-local ansible_host=10.0.0.200
-
-[Debian]
-lab-local ansible_host=10.0.0.200
-es-1.garbage-day.local ansible_host=10.0.0.169
-
-[CentOS]
-ipa-1.garbage-day.local ansible_host=10.0.0.57
-
-[virtual:children]
-ipa
-elasticsearch
-
-[ipa]
-ipa-1.garbage-day.local ansible_host=10.0.0.57
-
-[elasticsearch]
-es-1.garbage-day.local ansible_host=10.0.0.169
+lab-local
